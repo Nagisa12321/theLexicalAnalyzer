@@ -40,7 +40,7 @@ public class Analyzer {
                 for(int i = 0 ;i < line.length(); i++) {
                     System.out.print(line.charAt(i));
                     System.out.print("_\033[31m(^-^)\033[0m");
-                    Thread.sleep(20);
+                    Thread.sleep(5);
                     System.out.print("\b\b\b\b\b\b");
                 }
                 System.out.println();

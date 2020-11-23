@@ -18,7 +18,7 @@ public class Test {
         for (int i = 0; i < list.size(); ++i) {
             System.out.println("< " + list.get(i).SpeciesCode + ", " + list.get(i).WordSymbol + " >");
             System.out.print("_\033[31m(^-^)\033[0m");
-            Thread.sleep(100);
+            Thread.sleep(10);
             System.out.print("\b\b\b\b\b\b");
         }
         System.exit(10086);
