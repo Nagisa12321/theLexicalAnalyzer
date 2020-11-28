@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import static com.JtChen.KeywordJudgment.*;
-import static com.JtChen.KeywordJudgment.getBinarySymbolSyc;
 
 /**
  * 词法分析器
@@ -39,9 +38,9 @@ public class Analyzer {
             while ((line = in.readLine()) != null) {
                 for(int i = 0 ;i < line.length(); i++) {
                     System.out.print(line.charAt(i));
-                    System.out.print("_\033[31m(^-^)\033[0m");
-                    Thread.sleep(5);
-                    System.out.print("\b\b\b\b\b\b");
+//                    System.out.print("_\033[31m(^-^)\033[0m");
+//                    Thread.sleep(5);
+//                    System.out.print("\b\b\b\b\b\b");
                 }
                 System.out.println();
                 buffer.append(line);

@@ -34,7 +34,7 @@ public class Automata {
                 theIDBuilder.append(ch);
                 theStatus = 1;
                 return 1;
-            } else if (isNumberOrLetter(ch)) {
+            } else if (isNumber(ch)) {
                 num = 10 * num + ch - '0';
                 theStatus = 4;
                 return 4;
