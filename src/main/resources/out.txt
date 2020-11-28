@@ -2,7 +2,8 @@
 int main(void){
     int a = 123,c=321;
     int kb[2] = {0,2333};
-    char *b = "abcdefgABCD   fhnui恶法士 大夫撒
+    char *b = "abcdefgABCD   f
+    hnui恶法士 大夫撒
     旦发射点EFGhijklmnopqrstuvwxyz";
     for (int i = 0; i < c;i++){
         if(i==a)
@@ -58,7 +59,7 @@ Error word : 士大夫士大夫士大夫但是
 < 24, * >
 < 10, b >
 < 21, = >
-< 50, abcdefgABCD   fhnui恶法士 大夫撒    旦发射点EFGhijklmnopqrstuvwxyz >
+< 50, abcdefgABCD   f    hnui恶法士 大夫撒    旦发射点EFGhijklmnopqrstuvwxyz >
 < 34, ; >
 < 6, for >
 < 26, ( >

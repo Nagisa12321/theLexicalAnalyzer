@@ -15,11 +15,13 @@ public class Test {
         }
         List<TwoTuple> list = analyzer.getList();
         System.err.println("********************二元组********************");
-        for (int i = 0; i < list.size(); ++i) {
-            System.out.println("< " + list.get(i).SpeciesCode + ", " + list.get(i).WordSymbol + " >");
-//            System.out.print("_\033[31m(^-^)\033[0m");
-//            Thread.sleep(10);
-//            System.out.print("\b\b\b\b\b\b");
+        for (TwoTuple twoTuple : list) {
+            System.out.println("< " + twoTuple.SpeciesCode + ", " + twoTuple.WordSymbol + " >");
+/*
+            System.out.print("_\033[31m(^-^)\033[0m");
+            Thread.sleep(10);
+            System.out.print("\b\b\b\b\b\b");
+*/
         }
         System.exit(10086);
     }

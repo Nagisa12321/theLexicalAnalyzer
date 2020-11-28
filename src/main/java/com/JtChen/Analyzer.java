@@ -28,7 +28,7 @@ public class Analyzer {
      *
      * @param theFile 传入的文件，如test.c,readFile方法将把此文件读为一个String
      */
-    public void readFile(File theFile) throws InterruptedException {
+    public void readFile(File theFile) {
         try {
             FileInputStream fs = new FileInputStream(theFile);
             BufferedReader in = new BufferedReader(new InputStreamReader(fs));
@@ -38,9 +38,11 @@ public class Analyzer {
             while ((line = in.readLine()) != null) {
                 for(int i = 0 ;i < line.length(); i++) {
                     System.out.print(line.charAt(i));
-//                    System.out.print("_\033[31m(^-^)\033[0m");
-//                    Thread.sleep(5);
-//                    System.out.print("\b\b\b\b\b\b");
+/*
+                    System.out.print("_\033[31m(^-^)\033[0m");
+                    Thread.sleep(5);
+                    System.out.print("\b\b\b\b\b\b");
+*/
                 }
                 System.out.println();
                 buffer.append(line);

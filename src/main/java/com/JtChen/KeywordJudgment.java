@@ -7,6 +7,7 @@ import java.util.HashMap;
  * @date 2020/11/21
  * @version 1.0
  */
+@SuppressWarnings({"unchecked", "rawtypes"})
 public class KeywordJudgment {
     /**
      * 利用hashmap来存种别码以及其对应字符
@@ -22,6 +23,7 @@ public class KeywordJudgment {
         put("return", 8);
         put("void", 9);
     }};
+    @SuppressWarnings("unchecked")
     private static final HashMap<Character, Integer> UnarySymbolMap = new HashMap() {{
         put('+', 22);
         put('-', 23);
@@ -84,8 +86,7 @@ public class KeywordJudgment {
     }
 
     public static boolean isErrorLetter(char ch) {
-        if (!isLetter(ch) && !isNumber(ch) && ch != ' ') return true;
-        else return false;
+        return !isLetter(ch) && !isNumber(ch) && ch != ' ';
     }
 
     private static boolean isSmallLetter(char ch) {

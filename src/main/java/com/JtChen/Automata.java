@@ -79,7 +79,10 @@ public class Automata {
             if (ch == '"') {
                 theStatus = 0;
                 return 7;
-            } else theStringBuilder.append(ch);
+            } else {
+                theStringBuilder.append(ch);
+                return 6;
+            }
         if (theStatus == 9)
             if (isBinarySymbol(theSymbolBuilder.append(ch).toString())) {
                 theStatus = 0;
